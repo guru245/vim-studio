@@ -1,6 +1,17 @@
+# VIM Studio
+
+
+
 ## Feature
 
-
+* File system explorer, browsing directory hierarchies, and performing file system operations
+* Source code browser, providing an overview of the structure of the source code
+* Statusbar at the bottom, displaying useful information
+* Source tab, displaying all opened source via tab interface
+* Git wrapper, working with Git without leaving Vim studio.
+* Mark, highlighting several words in different colors simultaneously
+* Auto completion, opening popup menu for completion
+* For more features, see [.vimrc](./.vimrc)
 
 ## Installation
 
