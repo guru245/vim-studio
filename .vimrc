@@ -86,8 +86,7 @@ au BufReadPost *
 \ endif
 
 " Set 100 column guideline
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%100v.\+/
+set colorcolumn=100
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
