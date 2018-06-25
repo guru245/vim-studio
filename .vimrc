@@ -14,7 +14,7 @@ set nocompatible
 "  50 is undo limit.
 set history=100
 
-" Better not try to understand this. Leave this when using Vim.
+" No need to understand this. Leave this when using Vim.
 set magic
 
 " No swap file. It's messy.
@@ -45,11 +45,12 @@ set lazyredraw
 set backspace=indent,eol,start
 
 " Display the current cursor position in the lower right corner of the
-"  Vim window
-set ruler
+"  Vim window. But for now this is no londer used thanks to airline plugin.
+"set ruler
 
 " Display an incomplete vim command in the lower right corner of the Vim window
-set showcmd
+"  This is no longer used thanks to AutoComplPop plugin
+"set showcmd
 
 " Display line numbers
 set nu
