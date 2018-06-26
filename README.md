@@ -24,11 +24,13 @@
 
   ![auto completion](./.imgs/autocomp.gif)
 
+* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration
+
 * For more features, see [.vimrc](./.vimrc)
 
 ## Environments
 
-Vim studio is tested on the following conditions. For other conditions, the operations are not defined.
+Vim studio is tested on the following conditions. In other conditions, the operations are not defined.
 
 * Ubuntu 18.04 or Fedora 27
 * Vim 8.0
