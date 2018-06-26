@@ -2,7 +2,7 @@
 
 ![overview](./.imgs/overview.png)
 
-## Feature
+## Features
 
 * File system explorer, browsing directory hierarchies, and performing file system operations
 
@@ -12,19 +12,28 @@
 
 * Source tab, displaying all opened source via tab interface
 
-  <img src="./.imgs/tab.gif" alt="auto completion" style="zoom:80%" />
+  ![tab](./.imgs/tab.gif)
 
 * Git wrapper, working with Git without leaving Vim studio.
 
 * Marker, highlighting several words in different colors simultaneously
 
-  <img src="./.imgs/mark.png" alt="marker" style="zoom:50%" />
+  ![maker](./.imgs/mark.png)
 
 * Auto completion, opening popup menu for completion
 
-  <img src="./.imgs/autocomp.gif" alt="auto completion" style="zoom:60%" />
+  ![auto completion](./.imgs/autocomp.gif)
 
 * For more features, see [.vimrc](./.vimrc)
+
+## Environments
+
+Vim studio is tested on the following conditions. For other conditions, the operations are not defined.
+
+* Ubuntu 18.04 or Fedora 27
+* Vim 8.0
+* [MobaXterm](https://mobaxterm.mobatek.net/) (I prefer using a ssh client on Windows to a terminal on Linux due to function key mappings)
+* clang-format 6.0 (Optional)
 
 ## Installation
 
