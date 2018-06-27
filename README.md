@@ -68,7 +68,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
 ## Usage
 
-This section describes mapping keys for Vim studio. Note that normal Vim commands and other detailed configurations are not explained. If you are not used to the commands or [.vimrc](.vimrc), you may as well do your homework.
+This section describes mapping keys for Vim studio. Note that normal Vim commands and other detailed configurations of [.vimrc](.vimrc) are not explained. If you are not used to the Vim commands or [.vimrc](.vimrc), check out [Vim help](http://vimdoc.sourceforge.net/htmldoc/help.html) or [Vim options](http://vimdoc.sourceforge.net/htmldoc/options.html).
 
 * \<F1>: Show a man page for the keyword under the cursor.
 * \<F2>: Save the current file
@@ -88,6 +88,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * <Ctrl+k>: Format code style as per clang-format style options
 * <\d>: Toggle line number
 * <\p>: Toggle paste option. This is useful if you want to cut or copy some text from one window and paste it in Vim. Don't forget to toggle paste again once you finish pasting.
+* <\m>: Mark the keyword under the cursor
 
 ## Powered by:
 
