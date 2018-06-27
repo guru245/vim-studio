@@ -11,7 +11,7 @@ set all&
 set nocompatible
 
 " Keep 50 commands and 50 search patterns in the history.
-"  50 is undo limit.
+" 50 is undo limit.
 set history=100
 
 " No need to understand this. Leave this when using Vim.
@@ -45,11 +45,11 @@ set lazyredraw
 set backspace=indent,eol,start
 
 " Display the current cursor position in the lower right corner of the
-"  Vim window. But for now this is no londer used thanks to airline plugin.
+" Vim window. But for now this is no londer used thanks to airline plugin.
 "set ruler
 
 " Display an incomplete vim command in the lower right corner of the Vim window
-"  This is no longer used thanks to AutoComplPop plugin
+" This is no longer used thanks to AutoComplPop plugin
 "set showcmd
 
 " Display line numbers
@@ -62,7 +62,7 @@ set numberwidth=5
 set nowrap
 
 " Move the cursor to the first non-blank of the line when Vim
-"  move commands are used.
+" move commands are used.
 set startofline
 
 " Turn on syntax highlighting
@@ -105,7 +105,7 @@ set expandtab
 set smartindent
 
 " Copy indent from current line when starting a new line. This should be
-"  on when smartindent is used.
+" on when smartindent is used.
 set autoindent
 
 " Set indent for switch statement in C. Just my cup of tea.
@@ -139,7 +139,7 @@ set nowrapscan
 set ignorecase
 
 " Override ignorecase option if the search pattern contains an uppercase
-"  character.
+" character.
 set smartcase
 
 " Show where the pattern matches as it was typed so far.
@@ -176,7 +176,7 @@ map <C-l> :MBEbn<cr>
 map ,w :w<cr> :MBEbd<cr>
 
 " No longer use this ever since using MiniBufExpl; however, leave here
-"  just in case.
+" just in case.
 map <C-n> :tabnew<cr>
 "map <C-h> gT
 "map <C-l> gt
@@ -201,9 +201,9 @@ map <F11> :call Tj()<cr>
 map <F12> <c-T>
 
 " Format source codes by clang-format. To use this clang-format must be
-"  installed.
-map <C-K> :py3f ~/.vim/clang-format.py<cr>
-imap <C-K> <c-o>:py3f ~/.vim/clang-format.py<cr>
+" installed.
+map <C-K> :pyf ~/.vim/clang-format.py<cr>
+imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
 
 " Move source codes by tab size. Tab is right move and Shift+tab is left.
 vmap <Tab> >gv
@@ -219,10 +219,9 @@ fu! ToggleNu()
 endf
 map \d :call ToggleNu()<CR>
 
-" Toggle paste option
-"  This is useful if you want to cut or copy some text from one window
-"  and paste it in Vim. Don't forget to toggle pate again once you're done
-"  with pasting.
+" Toggle paste option. This is useful if you want to cut or copy some text
+" from one window and paste it in Vim. Don't forget to toggle pate again once
+" you're done with pasting.
 fu! TogglePaste()
     let &paste = 1 - &paste
 endf

@@ -28,7 +28,7 @@
 
 * For more features, see [.vimrc](./.vimrc)
 
-## Environments
+## Environment
 
 Vim studio is tested on the following conditions. In other conditions, the operations are not defined.
 
