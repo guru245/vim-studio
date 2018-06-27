@@ -40,7 +40,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 * Vim 8.0
 * [MobaXterm](https://mobaxterm.mobatek.net/) (I prefer using a ssh client on Windows to a terminal on Linux due to function key mappings)
 * Exuberant ctags and cscope
-* [clang-format](https://clang.llvm.org/docs/ClangFormat.html) 6.0 (Optional)
+* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) 6.0 (Optional)
 
 ## Installation
 
@@ -103,4 +103,4 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * [Vim-mark](https://github.com/inkarkat/vim-mark)
 * [AutoComplPop](https://github.com/vim-scripts/AutoComplPop)
 * [Cscope_macros](https://github.com/vim-scripts/cscope_macros.vim/blob/master/plugin/cscope_macros.vim)
-
+* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) 6.0
