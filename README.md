@@ -1,6 +1,6 @@
 # VIM Studio
 
-What if we can turn Vim into an IDE? Yes, we can. It works even better and faster than any traditional IDE. Tada!
+Can we turn Vim into an IDE? Yes, we can. It works even better and faster than any traditional IDE. Let's see.
 
 ![overview](./.imgs/overview.png)
 
