@@ -103,4 +103,5 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * [Vim-mark](https://github.com/inkarkat/vim-mark)
 * [AutoComplPop](https://github.com/vim-scripts/AutoComplPop)
 * [Cscope_macros](https://github.com/vim-scripts/cscope_macros.vim/blob/master/plugin/cscope_macros.vim)
-* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) 6.0
+* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html)
+
