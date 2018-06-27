@@ -168,19 +168,6 @@ map <F3> :TagbarToggle<cr>
 " Show a sidebar listing file system in tree view
 map <F4> :NERDTreeToggle<cr>
 
-" Show MiniBufExpl at the bottom. You can navigate each buffer by pressing
-" ctrl+h or ctrl+l and close by ctrl+w
-"map <F6> :MBEToggleAll<cr>
-map <C-h> :MBEbp<cr>
-map <C-l> :MBEbn<cr>
-map ,w :w<cr> :MBEbd<cr>
-
-" No longer use this ever since using MiniBufExpl; however, leave here
-" just in case.
-map <C-n> :tabnew<cr>
-"map <C-h> gT
-"map <C-l> gt
-
 " Fold a function body from brace to brace.
 map <F7> v]}zf
 "map <F7> zo
@@ -200,6 +187,19 @@ map <F11> :call Tj()<cr>
 " Step out of the function.
 map <F12> <c-T>
 
+" Show MiniBufExpl at the bottom. You can navigate each buffer by pressing
+" ctrl+h or ctrl+l and close by ctrl+w
+"map <F6> :MBEToggleAll<cr>
+map <C-h> :MBEbp<cr>
+map <C-l> :MBEbn<cr>
+map ,w :w<cr> :MBEbd<cr>
+
+" No longer use this ever since using MiniBufExpl; however, leave here
+" just in case.
+map <C-n> :tabnew<cr>
+"map <C-h> gT
+"map <C-l> gt
+
 " Format source codes by clang-format. To use this clang-format must be
 " installed.
 map <C-K> :pyf ~/.vim/clang-format.py<cr>
@@ -209,10 +209,6 @@ imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Convenience Features
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle line number display
 fu! ToggleNu()
     let &nu = 1 - &nu
@@ -220,7 +216,7 @@ endf
 map \d :call ToggleNu()<CR>
 
 " Toggle paste option. This is useful if you want to cut or copy some text
-" from one window and paste it in Vim. Don't forget to toggle pate again once
+" from one window and paste it in Vim. Don't forget to toggle paste again once
 " you're done with pasting.
 fu! TogglePaste()
     let &paste = 1 - &paste
