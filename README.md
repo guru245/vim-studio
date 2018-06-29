@@ -12,7 +12,7 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
 * Statusbar at the bottom, displaying useful information
 
-* Source tab, displaying all opened source via tab interface
+* Source tab at the top, displaying all opened source via tab interface
 
   ![tab](./.imgs/tab.gif)
 
@@ -73,7 +73,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * \<F1>: Show a man page for the keyword under the cursor.
 * \<F2>: Save the current file
 * \<F3>: Toggle tagbar, source code browser on the left side
-* \<F4>: Toggle NERDTree, file system explorer
+* \<F4>: Toggle NERDTree, file system explorer on the right side
 * \<F5>: Fold a function body
 * \<F6>: Unfold a function body
 * \<F7>: Empty
