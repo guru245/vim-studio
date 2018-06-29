@@ -84,7 +84,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * \<F12>: Step out of the function. (Codes must be indexed by ctags and cscope)
 * <Ctrl+h>: Go to a tab on left
 * <Ctrl+l>: Go to a tab on right
-* <,w>: Close the current file. (Well~ we call it buffer in Vim)
+* <,w>: Save and close the current file. *Well~ we call it buffer in Vim*
 * <Ctrl+k>: Format code style as per clang-format style options
 * <\d>: Toggle line number
 * <\p>: Toggle paste option. This is useful if you want to cut or copy some text from one window and paste it in Vim. Don't forget to toggle paste again once you finish pasting.
@@ -96,7 +96,6 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * [Vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [NERDtree](https://github.com/scrooloose/nerdtree)
 * [Tagbar](https://github.com/majutsushi/tagbar)
-* [Minibufexpl](https://github.com/fholgado/minibufexpl.vim)
 * [Vim-colors-solarized](https://github.com/altercation/solarized)
 * [Vim-airline](https://github.com/vim-airline/vim-airline)
 * [Vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)

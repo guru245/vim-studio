@@ -187,18 +187,12 @@ map <F11> :call Tj()<cr>
 " Step out of the function.
 map <F12> <c-T>
 
-" Show MiniBufExpl at the bottom. You can navigate each buffer by pressing
-" ctrl+h or ctrl+l and close by ctrl+w
-"map <F6> :MBEToggleAll<cr>
-map <C-h> :MBEbp<cr>
-map <C-l> :MBEbn<cr>
-map ,w :w<cr> :MBEbd<cr>
+" Move around bufferx by pressing ctrl+h or ctrl+l
+map <C-h> :bprevious<cr>
+map <C-l> :bnext<cr>
 
-" No longer use this ever since using MiniBufExpl; however, leave here
-" just in case.
-map <C-n> :tabnew<cr>
-"map <C-h> gT
-"map <C-l> gt
+" Save and close the buffer
+map ,w :w<cr> :bp <BAR> bd #<CR>
 
 " Format source codes by clang-format. To use this clang-format must be
 " installed.
@@ -243,7 +237,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -291,11 +284,3 @@ let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = ''
 let g:airline_section_error  = ''
 let g:airline_section_warning = ''
-
-" Set MiniBufExpl
-let g:miniBufExplAutoStart = 0
-let g:miniBufExplHideWhenDiff = 1
-let g:miniBufExplBuffersNeeded = 1
-let g:miniBufExplBRSplit = 1
-let g:miniBufExplShowBufNumbers = 0
-let g:miniBufExplCycleArround = 1
