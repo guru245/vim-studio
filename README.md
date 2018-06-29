@@ -94,6 +94,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 
 * [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 * [Vim-fugitive](https://github.com/tpope/vim-fugitive)
+* [Vim-unimpaired](https://github.com/tpope/vim-unimpaired)
 * [NERDtree](https://github.com/scrooloose/nerdtree)
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [Vim-colors-solarized](https://github.com/altercation/solarized)
