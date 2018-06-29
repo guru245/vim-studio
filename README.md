@@ -74,9 +74,9 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * \<F2>: Save the current file
 * \<F3>: Toggle tagbar, source code browser on the left side
 * \<F4>: Toggle NERDTree, file system explorer
-* \<F5>: Empty
-* \<F6>: Empty
-* \<F7>: Fold a function body
+* \<F5>: Fold a function body
+* \<F6>: Unfold a function body
+* \<F7>: Empty
 * \<F8>: Clear all marks
 * \<F9>: Empty
 * \<F10>: Empty 

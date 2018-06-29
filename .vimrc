@@ -168,9 +168,9 @@ map <F3> :TagbarToggle<cr>
 " Show a sidebar listing file system in tree view
 map <F4> :NERDTreeToggle<cr>
 
-" Fold a function body from brace to brace.
-map <F7> v]}zf
-"map <F7> zo
+" Fold/unfold a function body from brace to brace.
+map <F5> v]}zf
+map <F6> zo
 
 " Clear all markers
 map <F8> :MarkClear<cr> :noh<cr>
