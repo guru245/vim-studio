@@ -192,7 +192,7 @@ map <C-h> :bprevious<cr>
 map <C-l> :bnext<cr>
 
 " Save and close the buffer
-map ,w :w<cr> :bp <BAR> bd #<CR>
+map ,w :bp <BAR> bd #<CR>
 
 " Format source codes by clang-format. To use this clang-format must be
 " installed.
@@ -286,3 +286,4 @@ let g:airline_symbols.maxlinenr = ''
 let g:airline_section_error  = ''
 let g:airline_section_warning = ''
 let g:airline_symbols.notexists = ''
+autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
