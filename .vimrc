@@ -196,8 +196,8 @@ map ,w :bp <BAR> bd #<CR>
 
 " Format source codes by clang-format. To use this clang-format must be
 " installed.
-map <C-K> :pyf ~/.vim/clang-format.py<cr>
-imap <C-K> <c-o>:pyf ~/.vim/clang-format.py<cr>
+map <C-K> :py3f ~/.vim/clang-format.py<cr>
+imap <C-K> <c-o>:py3f ~/.vim/clang-format.py<cr>
 
 " Move source codes by tab size. Tab is right move and Shift+tab is left.
 vmap <Tab> >gv
