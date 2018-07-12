@@ -191,6 +191,12 @@ map <F12> <c-T>
 map <C-h> :bprevious<cr>
 map <C-l> :bnext<cr>
 
+" Move between split windows
+map <C-Left> :wincmd h<cr>
+map <C-Right> :wincmd l<cr>
+map <C-Up> :wincmd k<cr>
+map <C-Down> :wincmd j<cr>
+
 " Save and close the buffer
 map ,w :bp <BAR> bd #<CR>
 
