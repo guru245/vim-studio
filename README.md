@@ -22,7 +22,7 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
   ![maker](./.imgs/mark.png)
 
-* Auto completion, opening popup menu for completion
+* Auto completion, opening a popup menu to complete, using tab
 
   ![auto completion](./.imgs/autocomp.gif)
 
@@ -103,7 +103,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * [Vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [Vim-ingo-library](https://github.com/inkarkat/vim-ingo-library)
 * [Vim-mark](https://github.com/inkarkat/vim-mark)
-* [AutoComplPop](https://github.com/vim-scripts/AutoComplPop)
 * [Cscope_macros](https://github.com/vim-scripts/cscope_macros.vim/blob/master/plugin/cscope_macros.vim)
 * [Clang-format](https://clang.llvm.org/docs/ClangFormat.html)
+* [Supertab](https://github.com/ervandew/supertab)
 

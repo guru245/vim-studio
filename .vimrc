@@ -122,7 +122,7 @@ set fileencodings=utf-8,cp949,cp932,euc-kr,shift-jis,big5,ucs-2le,latin1
 set encoding=utf-8
 
 " Use only unix fileformat. "dos" can be added like "unix, dos"
-"  if you are a coward.
+" if you are a coward.
 set fileformats=unix
 
 
@@ -249,8 +249,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'inkarkat/vim-ingo-library'
 Plugin 'inkarkat/vim-mark'
-Plugin 'vim-scripts/AutoComplPop'
 Plugin 'cscope_macros.vim'
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -293,3 +293,6 @@ let g:airline_section_error  = ''
 let g:airline_section_warning = ''
 let g:airline_symbols.notexists = ''
 autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
+
+" Set Supertab
+let g:SuperTabDefaultCompletionType = "<c-n>"
