@@ -84,7 +84,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * \<F12>: Step out of the function. (Codes must be indexed by ctags and cscope)
 * <Ctrl+h>: Go to a tab on left
 * <Ctrl+l>: Go to a tab on right
-* \<Ctrl+left>, \<Ctrl+right>, \<Ctrl+up>, \<Ctrl+down>:  Move between split windows
+* \<Shift+h>, \<Shift+l>, \<Shift+k>, \<Shift+j>:  Move between split windows
 * <,w>: Save and close the current file. *Well~ we call it buffer in Vim*
 * <Ctrl+k>: Format code style as per clang-format style options
 * <\d>: Toggle line number

@@ -187,15 +187,15 @@ map <F11> :call Tj()<cr>
 " Step out of the function.
 map <F12> <c-T>
 
-" Move around bufferx by pressing ctrl+h or ctrl+l
+" Move around buffers by pressing ctrl+h or ctrl+l
 map <C-h> :bprevious<cr>
 map <C-l> :bnext<cr>
 
 " Move between split windows
-map <C-Left> :wincmd h<cr>
-map <C-Right> :wincmd l<cr>
-map <C-Up> :wincmd k<cr>
-map <C-Down> :wincmd j<cr>
+map <S-h> :wincmd h<cr>
+map <S-l> :wincmd l<cr>
+map <S-k> :wincmd k<cr>
+map <S-j> :wincmd j<cr>
 
 " Save and close the buffer
 map ,w :bp <BAR> bd #<CR>
