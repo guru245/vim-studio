@@ -26,6 +26,8 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
   ![auto completion](./.imgs/autocomp.gif)
 
+* No more hassles to navigate codes with ctags and cscope. Open the code and you can search and browse the codes thanks to Gutentags.
+
 * [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration
 
 * [Solarized](https://github.com/altercation/solarized) color scheme, improving readability
@@ -39,8 +41,6 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 * Ubuntu 18.04 or Fedora 27
 * Vim 8.0
 * [MobaXterm](https://mobaxterm.mobatek.net/) (I prefer using a ssh client on Windows to a terminal on Linux due to function key mappings)
-* Exuberant ctags and cscope
-* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) 6.0 (Optional)
 
 ## Installation
 
@@ -48,7 +48,11 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
    Set `export TERM=xterm-256color` in .bashrc
 
-2. Setting Vim config
+2. Install exuberant-ctags and global, e.g `apt install exuberant-ctags global` in Ubuntu
+
+   * Install clang-format if you want to format codes with the desired style . `apt install clang-format-6.0`
+
+3. Setting Vim config
 
    ```bash
    git clone --depth 1 https://github.com/guru245/vim-studio.git [vim-studio where you want]
@@ -70,26 +74,26 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
 This section describes mapping keys for Vim studio. Note that normal Vim commands and other detailed configurations of [.vimrc](.vimrc) are not explained. If you are not used to the Vim commands or [.vimrc](.vimrc), check out [Vim help](http://vimdoc.sourceforge.net/htmldoc/help.html) or [Vim options](http://vimdoc.sourceforge.net/htmldoc/options.html).
 
-* \<F1>: Show a man page for the keyword under the cursor.
-* \<F2>: Save the current file
-* \<F3>: Toggle tagbar, source code browser on the left side
-* \<F4>: Toggle NERDTree, file system explorer on the right side
-* \<F5>: Fold a function body
-* \<F6>: Unfold a function body
-* \<F7>: Empty
-* \<F8>: Clear all marks
-* \<F9>: Empty
-* \<F10>: Empty 
-* \<F11>: Step into the function. (Codes must be indexed by ctags and cscope)
-* \<F12>: Step out of the function. (Codes must be indexed by ctags and cscope)
-* <Ctrl+h>: Go to a tab on left
-* <Ctrl+l>: Go to a tab on right
-* \<Shift+h>, \<Shift+l>, \<Shift+k>, \<Shift+j>:  Move between split windows
-* <,w>: Save and close the current file. *Well~ we call it buffer in Vim*
-* <Ctrl+k>: Format code style as per clang-format style options
-* <\d>: Toggle line number
-* <\p>: Toggle paste option. This is useful if you want to cut or copy some text from one window and paste it in Vim. Don't forget to toggle paste again once you finish pasting.
-* <\m>: Mark the keyword under the cursor
+* F1: Show a man page for the keyword under the cursor.
+* F2: Save the current file
+* F3: Toggle tagbar, source code browser on the left side
+* F4: Toggle NERDTree, file system explorer on the right side
+* F5: Fold a function body
+* F6: Unfold a function body
+* F7: Empty
+* F8: Clear all marks
+* F9: Empty
+* F10: Empty
+* F11: Step into the function.
+* F12: Step out of the function.
+* Ctrl+h: Go to a tab on left
+* Ctrl+l: Go to a tab on right
+* Shift+h, Shift+l, Shift+k, Shift+j:  Move between split windows
+* ,w: Save and close the current file. *Well~ we call it buffer in Vim*
+* Ctrl+k: Format code style as per clang-format style options
+* \<leader>d: Toggle line number
+* \<leader>p: Toggle paste option. This is useful if you want to cut or copy some text from one window and paste it in Vim. Don't forget to toggle paste again once you finish pasting.
+* \<leader>m: Mark the keyword under the cursor
 
 ## Powered by:
 
@@ -103,7 +107,8 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * [Vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [Vim-ingo-library](https://github.com/inkarkat/vim-ingo-library)
 * [Vim-mark](https://github.com/inkarkat/vim-mark)
-* [Cscope_macros](https://github.com/vim-scripts/cscope_macros.vim/blob/master/plugin/cscope_macros.vim)
 * [Clang-format](https://clang.llvm.org/docs/ClangFormat.html)
 * [Supertab](https://github.com/ervandew/supertab)
+* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
+* [gutentags_plus](https://github.com/skywind3000/gutentags_plus)
 

@@ -213,7 +213,7 @@ vmap <S-Tab> <gv
 fu! ToggleNu()
     let &nu = 1 - &nu
 endf
-map \d :call ToggleNu()<CR>
+map <leader>d :call ToggleNu()<CR>
 
 " Toggle paste option. This is useful if you want to cut or copy some text
 " from one window and paste it in Vim. Don't forget to toggle paste again once
@@ -221,7 +221,7 @@ map \d :call ToggleNu()<CR>
 fu! TogglePaste()
     let &paste = 1 - &paste
 endf
-map \p :call TogglePaste()<CR>
+map <leader>p :call TogglePaste()<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -249,8 +249,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'inkarkat/vim-ingo-library'
 Plugin 'inkarkat/vim-mark'
-Plugin 'cscope_macros.vim'
 Plugin 'ervandew/supertab'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'skywind3000/gutentags_plus'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -296,3 +297,10 @@ autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " Set Supertab
 let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" Set vim-gutentags and gutentags_plus
+let g:gutentags_project_root = ['.root']
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+let g:gutentags_modules = ['ctags', 'gtags_cscope']
+let g:gutentags_auto_add_gtags_cscope = 0
+"let g:gutentags_define_advanced_commands = 1
