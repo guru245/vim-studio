@@ -26,9 +26,9 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
   ![auto completion](./.imgs/autocomp.gif)
 
-* No more hassles to navigate codes with ctags and cscope. Open the code and you can search and browse the codes thanks to Gutentags.
+* Automatic indexing to search and browse source codes thanks to Gutentags. Without Gutentags, whenever you modify codes, tags must be up-to-date MANUALLY. Yuck!
 
-* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration
+* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration to format codes with the desired style.
 
 * [Solarized](https://github.com/altercation/solarized) color scheme, improving readability
 
@@ -50,7 +50,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
 2. Install exuberant-ctags and global, e.g `apt install exuberant-ctags global` in Ubuntu
 
-   * Install clang-format if you want to format codes with the desired style . `apt install clang-format-6.0`
+   * Install clang-format if you want. `apt install clang-format-6.0`
 
 3. Setting Vim config
 
