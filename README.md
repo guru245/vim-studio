@@ -38,7 +38,7 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
 Vim studio is tested on the following conditions. In other conditions, the operations are not defined.
 
-* Ubuntu 18.04 or Fedora 27
+* Ubuntu 18.04 or Fedora 24
 * Vim 8.0
 * [MobaXterm](https://mobaxterm.mobatek.net/) (I prefer using a ssh client on Windows to a terminal on Linux due to function key mappings)
 

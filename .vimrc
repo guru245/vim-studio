@@ -271,9 +271,10 @@ filetype plugin indent on    " required
 " Ease my eyes
 colorscheme solarized
 
-" Set tab position and width
+" Set tagbar
 let g:tagbar_left = 1
 let g:tagbar_width = 30
+let g:tagbar_sort = 0
 
 " Set NERDTree position
 let g:NERDTreeWinPos='right'
@@ -302,5 +303,4 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:gutentags_project_root = ['.root']
 let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:gutentags_modules = ['ctags', 'gtags_cscope']
-let g:gutentags_auto_add_gtags_cscope = 0
 "let g:gutentags_define_advanced_commands = 1
