@@ -51,7 +51,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 2. Install exuberant-ctags and global, e.g `apt install exuberant-ctags global` in Ubuntu
 
    * Install clang-format if you want. `apt install clang-format-6.0`
-   * If you are used to building things from source, [universal-ctags](https://github.com/universal-ctags/ctags) is recommended.
+   * If you are used to building things from source, [universal-ctags](https://github.com/universal-ctags/ctags) is recommended instead of exuberant-ctags.
 
 3. Setting Vim config
 
