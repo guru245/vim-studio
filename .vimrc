@@ -303,4 +303,3 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:gutentags_project_root = ['.root']
 let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:gutentags_modules = ['ctags', 'gtags_cscope']
-"let g:gutentags_define_advanced_commands = 1
