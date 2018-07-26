@@ -251,7 +251,7 @@ Plugin 'inkarkat/vim-ingo-library'
 Plugin 'inkarkat/vim-mark'
 Plugin 'ervandew/supertab'
 Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'skywind3000/gutentags_plus'
+Plugin 'guru245/gutentags_plus'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

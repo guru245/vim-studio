@@ -96,6 +96,28 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * \<leader>p: Toggle paste option. This is useful if you want to cut or copy some text from one window and paste it in Vim. Don't forget to toggle paste again once you finish pasting.
 * \<leader>m: Mark the keyword under the cursor
 
+To perform cscope searching, use `Gs` command below. 
+
+```
+:Gs {querytype} {name}
+```
+
+Where `{querytype}` corresponds to the actual cscope line interface numbers as well as default nvi commands:
+
+```
+0 or s: Find this symbol
+1 or g: Find this definition
+2 or d: Find functions called by this function
+3 or c: Find functions calling this function
+4 or t: Find this text string
+6 or e: Find this egrep pattern
+7 or f: Find this file
+8 or i: Find files #including this file
+9 or a: Find places where this symbol is assigned a value
+```
+
+`Gs` command is short for `GscopeFind`, originated from [gutentags_plus](https://github.com/skywind3000/gutentags_plus). Check out keymaps for `GscopeFind` from the page.
+
 ## Powered by:
 
 * [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
