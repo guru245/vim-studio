@@ -98,9 +98,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 
 To perform cscope searching, use `Gs` command below. 
 
-```
-:Gs {querytype} {name}
-```
+`:Gs {querytype} {name}`,
 
 Where `{querytype}` corresponds to the actual cscope line interface numbers as well as default nvi commands:
 
@@ -132,6 +130,6 @@ Where `{querytype}` corresponds to the actual cscope line interface numbers as w
 * [Vim-mark](https://github.com/inkarkat/vim-mark)
 * [Clang-format](https://clang.llvm.org/docs/ClangFormat.html)
 * [Supertab](https://github.com/ervandew/supertab)
-* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
-* [gutentags_plus](https://github.com/skywind3000/gutentags_plus)
+* [Vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
+* [Gutentags_plus](https://github.com/skywind3000/gutentags_plus)
 
