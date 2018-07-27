@@ -6,31 +6,31 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
 ## Features
 
-* File system explorer, browsing directory hierarchies, and performing file system operations
+* File system explorer: browses directory hierarchies, and performs file system operations
 
-* Source code browser, providing an overview of the structure of the source code
+* Source code browser: provides an overview of the structure of the source code
 
-* Statusbar at the bottom, displaying useful information
+* Statusbar at the bottom: displays useful information
 
-* Source tab at the top, displaying all opened source via tab interface
+* Source tab at the top: displays all opened source via tab interface
 
   ![tab](./.imgs/tab.gif)
 
-* Git wrapper, working with Git without leaving Vim studio.
+* Git wrapper: works with Git without leaving Vim studio.
 
-* Marker, highlighting several words in different colors simultaneously
+* Marker: highlights several words in different colors simultaneously
 
   ![maker](./.imgs/mark.png)
 
-* Auto completion, opening a popup menu to complete, using tab
+* Auto completion: opens a popup menu to complete using tab
 
   ![auto completion](./.imgs/autocomp.gif)
 
-* Automatic indexing to search and browse source codes thanks to Gutentags. Without Gutentags, whenever you modify codes, tags must be up-to-date MANUALLY. Yuck!
+* Automatic index: searches and browses source codes thanks to Gutentags. Without Gutentags, whenever you modify codes, tags must be up-to-date MANUALLY. Yuck!
 
-* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration to format codes with the desired style.
+* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration: formats codes with the desired style.
 
-* [Solarized](https://github.com/altercation/solarized) color scheme, improving readability
+* [Solarized](https://github.com/altercation/solarized) color scheme: improves readability
 
 * For more features, see [.vimrc](./.vimrc)
 
