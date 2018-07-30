@@ -36,6 +36,8 @@ set timeoutlen=3000 ttimeoutlen=100
 " Not redraw while executing macros, and commands.
 set lazyredraw
 
+set visualbell
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Plugin Settings
