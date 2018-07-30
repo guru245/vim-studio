@@ -38,6 +38,87 @@ set lazyredraw
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim Plugin Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Load plugins when starting up
+set loadplugins
+
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'inkarkat/vim-ingo-library'
+Plugin 'inkarkat/vim-mark'
+Plugin 'ervandew/supertab'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'guru245/gutentags_plus'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" Ease my eyes
+colorscheme solarized
+
+" Set tagbar
+let g:tagbar_left = 1
+let g:tagbar_width = 30
+let g:tagbar_sort = 0
+
+" Set NERDTree position
+let g:NERDTreeWinPos='right'
+
+" Set airline
+let g:airline_theme='dark'
+"let g:airline_solarized_bg='dark'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tagbar#enabled = 1
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.branch = ''
+let g:airline_symbols.linenr = ''
+let g:airline_symbols.maxlinenr = ''
+let g:airline_section_error  = ''
+let g:airline_section_warning = ''
+let g:airline_symbols.notexists = ''
+autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
+
+" Set Supertab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" Set vim-gutentags and gutentags_plus
+let g:gutentags_project_root = ['.root']
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+let g:gutentags_modules = ['ctags', 'gtags_cscope']
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tell Vim to delete the white space at the start of the line, a line break
@@ -88,6 +169,7 @@ au BufReadPost *
 
 " Set 100 column guideline
 set colorcolumn=100
+highlight ColorColumn ctermbg=red
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -188,8 +270,8 @@ map <F11> :call Tj()<cr>
 map <F12> <c-T>
 
 " Move around buffers by pressing ctrl+h or ctrl+l
-map <C-h> :bprevious<cr>
-map <C-l> :bnext<cr>
+map <C-Left> :bprevious<cr>
+map <C-Right> :bnext<cr>
 
 " Move between split windows
 map <S-h> :wincmd h<cr>
@@ -222,84 +304,3 @@ fu! TogglePaste()
     let &paste = 1 - &paste
 endf
 map <leader>p :call TogglePaste()<CR>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vim Plugin Settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Load plugins when starting up
-set loadplugins
-
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'scrooloose/nerdtree'
-Plugin 'majutsushi/tagbar'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'inkarkat/vim-ingo-library'
-Plugin 'inkarkat/vim-mark'
-Plugin 'ervandew/supertab'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'guru245/gutentags_plus'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-" Ease my eyes
-colorscheme solarized
-
-" Set tagbar
-let g:tagbar_left = 1
-let g:tagbar_width = 30
-let g:tagbar_sort = 0
-
-" Set NERDTree position
-let g:NERDTreeWinPos='right'
-
-" Set airline
-let g:airline_theme='dark'
-"let g:airline_solarized_bg='dark'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tagbar#enabled = 1
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.branch = ''
-let g:airline_symbols.linenr = ''
-let g:airline_symbols.maxlinenr = ''
-let g:airline_section_error  = ''
-let g:airline_section_warning = ''
-let g:airline_symbols.notexists = ''
-autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
-
-" Set Supertab
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" Set vim-gutentags and gutentags_plus
-let g:gutentags_project_root = ['.root']
-let g:gutentags_cache_dir = expand('~/.cache/tags')
-let g:gutentags_modules = ['ctags', 'gtags_cscope']
