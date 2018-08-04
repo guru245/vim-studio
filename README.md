@@ -62,13 +62,6 @@ Vim studio is tested on the following conditions. In other conditions, the opera
    vim +PluginInstall +qall
    ```
 
-   Although you encounter the following error message, continue without any bother. The error won't happen once Vim is set correctly.
-
-   ```bash
-   Error detected while processing /home/guru245/.vimrc: line  275:
-   E185: Cannot find color scheme 'solarized'
-   Press ENTER or type command to continue
-   ```
 
 ## Usage
 
