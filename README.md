@@ -56,10 +56,9 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 3. Setting Vim config
 
    ```bash
-   git clone --depth 1 https://github.com/guru245/vim-studio.git [vim-studio where you want]
+   git clone --depth 1 --recurse-submodules https://github.com/guru245/vim-studio.git [vim-studio where you want]
    ln -s [vim-studio]/.vim ~/.vim
    ln -s [vim-studio]/.vimrc ~/.vimrc
-   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
    vim +PluginInstall +qall
    ```
 
