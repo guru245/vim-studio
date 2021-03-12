@@ -88,7 +88,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * F10: Empty
 * F11: Step into the function.
 * F12: Step out of the function.
-* Ctrl+h/l: Go to the tab on the left/right
+* Ctrl+h, Ctrl+l: Go to the tab on the left/right
 * Shift+h, Shift+l, Shift+k, Shift+j:  Move between split windows
 * ,w: Save and close the current file. *Well~ we call it buffer in Vim*
 * Ctrl+k: Format code style as per clang-format style options
