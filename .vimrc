@@ -38,6 +38,7 @@ set lazyredraw
 
 set visualbell
 
+set mouse=a
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Plugin Settings
@@ -59,7 +60,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'inkarkat/vim-ingo-library'
@@ -84,7 +85,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Ease my eyes
-colorscheme solarized
+"colorscheme solarized
 
 " Set tagbar
 let g:tagbar_left = 1
@@ -95,21 +96,21 @@ let g:tagbar_sort = 0
 let g:NERDTreeWinPos='right'
 
 " Set airline
-let g:airline_theme='dark'
+"let g:airline_theme='dark'
 "let g:airline_solarized_bg='dark'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tagbar#enabled = 1
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.branch = ''
-let g:airline_symbols.linenr = ''
-let g:airline_symbols.maxlinenr = ''
-let g:airline_section_error  = ''
-let g:airline_section_warning = ''
-let g:airline_symbols.notexists = ''
-autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#formatter = 'unique_tail'
+"let g:airline#extensions#tagbar#enabled = 1
+"if !exists('g:airline_symbols')
+"    let g:airline_symbols = {}
+"endif
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.linenr = ''
+"let g:airline_symbols.maxlinenr = ''
+"let g:airline_section_error  = ''
+"let g:airline_section_warning = ''
+"let g:airline_symbols.notexists = ''
+"autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " Set Supertab
 let g:SuperTabDefaultCompletionType = "<c-n>"

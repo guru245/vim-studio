@@ -6,31 +6,33 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
 ## Features
 
-* File system explorer: browses directory hierarchies, and performs file system operations
+* File system explorer browses directory hierarchies, and performs file system operations
 
-* Source code browser: provides an overview of the structure of the source code
+* Source code browser provides an overview of the structure of the source code
 
-* Statusbar at the bottom: displays useful information
+* Statusbar at the bottom displays useful information
 
-* Source tab at the top: displays all opened source via tab interface
+* Source tab at the top displays all opened source via tab interface
 
   ![tab](./.imgs/tab.gif)
 
-* Git wrapper: works with Git without leaving Vim studio.
+* Git wrapper works with Git without leaving Vim studio.
 
-* Marker: highlights several words in different colors simultaneously
+* Marker highlights several words in different colors.
 
   ![maker](./.imgs/mark.png)
 
-* Auto completion: opens a popup menu to complete using tab
+* Auto completion opens a popup menu to complete using tab
 
   ![auto completion](./.imgs/autocomp.gif)
 
-* Automatic index: searches and browses source codes thanks to Gutentags. Without Gutentags, whenever you modify codes, tags must be up-to-date MANUALLY. Yuck!
+* Automatic index searches and browses source codes thanks to Gutentags. Without Gutentags, whenever you modify codes, tags must be up-to-date MANUALLY. Yuck!
 
-* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration: formats codes with the desired style.
+* [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration formats codes with the desired style.
 
-* [Solarized](https://github.com/altercation/solarized) color scheme: improves readability
+* Vim-airline shows you nice glyphs.
+
+  ![auto completion](./.imgs/airline_demo.gif)
 
 * For more features, see [.vimrc](./.vimrc)
 
@@ -38,9 +40,9 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
 Vim studio is tested on the following conditions. In other conditions, the operations are not defined.
 
-* Ubuntu 18.04, Fedora 24, and WSL on Microsoft Windows Version 1803 or later 
+* Ubuntu 18.04~, Fedora 24, and WSL2 
 * Vim 8.0
-* [MobaXterm](https://mobaxterm.mobatek.net/) (I prefer using a ssh client on Windows to a terminal on Linux due to function key mappings)
+* [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started) 
 
 ## Installation
 
@@ -48,12 +50,19 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
    Set `export TERM=xterm-256color` in .bashrc
 
-2. Install exuberant-ctags and global, e.g `apt install exuberant-ctags global` in Ubuntu
+2. Install exuberant-ctags and global.
 
-   * Install clang-format if you want. `apt install clang-format-6.0`
-   * If you are used to building things from source, [universal-ctags](https://github.com/universal-ctags/ctags) is recommended instead of exuberant-ctags.
+   * `apt install exuberant-ctags global` in Ubuntu
+   * If you are used to building things from source, [universal-ctags](https://github.com/universal-ctags/ctags) is recommended instead of exuberant-ctags because exuberant-ctags is very old and is not maintained.
 
-3. Setting Vim config
+3. Install clang-format if you want. `apt install clang-format`
+
+4. Install [Cascadia Code]([Windows Terminal Cascadia Code | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/cascadia-code)) fonts for glyphs.
+
+   * Set the font by default to your terminal.
+   * See [Windows Terminal Powerline Setup | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup) for your reference.
+
+5. Setting Vim config
 
    ```bash
    git clone --depth 1 --recurse-submodules https://github.com/guru245/vim-studio.git [vim-studio where you want]
@@ -114,7 +123,6 @@ Where `{querytype}` corresponds to the actual cscope line interface numbers as w
 * [Vim-unimpaired](https://github.com/tpope/vim-unimpaired)
 * [NERDtree](https://github.com/scrooloose/nerdtree)
 * [Tagbar](https://github.com/majutsushi/tagbar)
-* [Vim-colors-solarized](https://github.com/altercation/solarized)
 * [Vim-airline](https://github.com/vim-airline/vim-airline)
 * [Vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [Vim-ingo-library](https://github.com/inkarkat/vim-ingo-library)
