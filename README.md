@@ -57,7 +57,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
 3. Install clang-format if you want. `apt install clang-format`
 
-4. Install [Cascadia Code]([Windows Terminal Cascadia Code | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/cascadia-code)) fonts for glyphs.
+4. Install [Cascadia Code](https://docs.microsoft.com/en-us/windows/terminal/cascadia-code) fonts for glyphs.
 
    * Set the font by default to your terminal.
    * See [Windows Terminal Powerline Setup | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup) for your reference.
