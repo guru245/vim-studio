@@ -40,9 +40,9 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
 Vim studio is tested on the following conditions. In other conditions, the operations are not defined.
 
-* Ubuntu 18.04~, Fedora 24, and WSL2 
+* Ubuntu 18.04~, Fedora 24, and WSL2
 * Vim 8.0
-* [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started) 
+* [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started)
 
 ## Installation
 
@@ -88,7 +88,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * F10: Empty
 * F11: Step into the function.
 * F12: Step out of the function.
-* Ctrl+Left/Right arrow: Go to the tab on the left/right
+* Ctrl+h/l: Go to the tab on the left/right
 * Shift+h, Shift+l, Shift+k, Shift+j:  Move between split windows
 * ,w: Save and close the current file. *Well~ we call it buffer in Vim*
 * Ctrl+k: Format code style as per clang-format style options
@@ -96,7 +96,7 @@ This section describes mapping keys for Vim studio. Note that normal Vim command
 * \<leader>p: Toggle paste option. This is useful if you want to cut or copy some text from one window and paste it in Vim. Don't forget to toggle paste again once you finish pasting.
 * \<leader>m: Mark the keyword under the cursor
 
-To perform cscope searching, use `Gs` command below. 
+To perform cscope searching, use `Gs` command below.
 
 `:Gs {querytype} {name}`,
 

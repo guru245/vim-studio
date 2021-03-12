@@ -96,11 +96,11 @@ let g:tagbar_sort = 0
 let g:NERDTreeWinPos='right'
 
 " Set airline
-"let g:airline_theme='dark'
+let g:airline_theme='dark'
 "let g:airline_solarized_bg='dark'
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#formatter = 'unique_tail'
-"let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tagbar#enabled = 1
 "if !exists('g:airline_symbols')
 "    let g:airline_symbols = {}
 "endif
@@ -110,7 +110,7 @@ let g:NERDTreeWinPos='right'
 "let g:airline_section_error  = ''
 "let g:airline_section_warning = ''
 "let g:airline_symbols.notexists = ''
-"autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
+autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " Set Supertab
 let g:SuperTabDefaultCompletionType = "<c-n>"
@@ -273,8 +273,8 @@ map <F11> :call Tj()<cr>
 map <F12> <c-T>
 
 " Move around buffers by pressing ctrl+h or ctrl+l
-map <C-Left> :bprevious<cr>
-map <C-Right> :bnext<cr>
+map <C-h> :bprevious<cr>
+map <C-l> :bnext<cr>
 
 " Move between split windows
 map <S-h> :wincmd h<cr>
