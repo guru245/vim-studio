@@ -170,9 +170,10 @@ au BufReadPost *
 \   exe "norm g`\"" |
 \ endif
 
-" Set 100 column guideline
+" Set 80, 100 column guideline
 set colorcolumn=100
 highlight ColorColumn ctermbg=red
+let &colorcolumn="80,".join(range(100,100),",")
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
