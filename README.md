@@ -38,7 +38,7 @@ Can we turn Vim into an IDE? Yes, we can. It works even better and faster than a
 
 ## Environment
 
-Vim studio is tested on the following conditions. In other conditions, the operations are not defined.
+Vim studio has been tested on the following conditions:
 
 * Ubuntu 18.04~, Fedora 24, and WSL2
 * Vim 8.0
@@ -46,7 +46,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
 ## Installation
 
-1. Setting terminal
+1. Set up the terminal
 
    Set `export TERM=xterm-256color` in .bashrc
 
@@ -59,8 +59,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
 4. Install [Cascadia Code](https://docs.microsoft.com/en-us/windows/terminal/cascadia-code) fonts for glyphs.
 
-   * Set the font by default to your terminal.
-   * See [Windows Terminal Powerline Setup | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup) for your reference.
+   * Set the font by default to your terminal. For your reference, see [Windows Terminal Powerline Setup | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
 
 5. Setting Vim config
 
@@ -74,7 +73,7 @@ Vim studio is tested on the following conditions. In other conditions, the opera
 
 ## Usage
 
-This section describes mapping keys for Vim studio. Note that normal Vim commands and other detailed configurations of [.vimrc](.vimrc) are not explained. If you are not used to the Vim commands or [.vimrc](.vimrc), check out [Vim help](http://vimdoc.sourceforge.net/htmldoc/help.html) or [Vim options](http://vimdoc.sourceforge.net/htmldoc/options.html).
+This section describes mapping keys for Vim studio. Note that normal Vim commands and other detailed configurations of [.vimrc](.vimrc) are not explained. If you are not familiar with the Vim commands or [.vimrc](.vimrc), check out [Vim help](http://vimdoc.sourceforge.net/htmldoc/help.html) or [Vim options](http://vimdoc.sourceforge.net/htmldoc/options.html).
 
 * F1: Show a man page for the keyword under the cursor.
 * F2: Save the current file
