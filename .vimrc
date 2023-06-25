@@ -38,7 +38,7 @@ set lazyredraw
 
 set visualbell
 
-set mouse=a
+" set mouse=a
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Plugin Settings
