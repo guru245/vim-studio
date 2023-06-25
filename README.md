@@ -74,9 +74,9 @@ fonts for glyphs.
 5. Setting Vim config
 
    ```bash
-   git clone --depth 1 --recurse-submodules
-   https://github.com/guru245/vim-studio.git [vim-studio where you want] ln -s
-   [vim-studio]/.vim ~/.vim ln -s [vim-studio]/.vimrc ~/.vimrc vim
+   git clone --depth 1 --recurse-submodules https://github.com/guru245/vim-studio.git [vim-studio where you want]
+   ln -s [vim-studio]/.vim ~/.vim
+   ln -s [vim-studio]/.vimrc ~/.vimrc vim
    +PluginInstall +qall
    ```
 
