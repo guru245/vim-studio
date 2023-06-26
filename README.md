@@ -46,7 +46,7 @@ any traditional IDE. Let's see.
 Vim studio has been tested on the following conditions:
 
 * Ubuntu 18.04~, Fedora 24, and WSL2
-* Vim 8.0
+* Vim 8.0+
 * [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started)
 
 ## Installation
@@ -76,8 +76,8 @@ fonts for glyphs.
    ```bash
    git clone --depth 1 --recurse-submodules https://github.com/guru245/vim-studio.git [vim-studio where you want]
    ln -s [vim-studio]/.vim ~/.vim
-   ln -s [vim-studio]/.vimrc ~/.vimrc vim
-   +PluginInstall +qall
+   ln -s [vim-studio]/.vimrc ~/.vimrc
+   vim +PluginInstall +qall
    ```
 
 ## Usage
@@ -110,9 +110,7 @@ check out [Vim help](http://vimdoc.sourceforge.net/htmldoc/help.html) or
   again once you finish pasting.
 * \<leader>m: Mark the keyword under the cursor
 
-To perform cscope searching, use `Gs` command below.
-
-`:Gs {querytype} {name}`,
+To perform cscope searching, use `:GscopeFind {querytype} {name}`,
 
 Where `{querytype}` corresponds to the actual cscope line interface numbers as
 well as default nvi commands:
@@ -129,9 +127,21 @@ well as default nvi commands:
 9 or a: Find places where this symbol is assigned a value
 ```
 
-`Gs` command is short for `GscopeFind`, originated from
-[gutentags_plus](https://github.com/skywind3000/gutentags_plus). Check out
-keymaps for `GscopeFind` from the page.
+Or you can use the following keymaps:
+
+| keymap | desc |
+|--------|------|
+| `<leader>cs` | Find symbol (reference) under cursor |
+| `<leader>cg` | Find symbol definition under cursor |
+| `<leader>cd` | Functions called by this function |
+| `<leader>cc` | Functions calling this function |
+| `<leader>ct` | Find text string under cursor |
+| `<leader>ce` | Find egrep pattern under cursor |
+| `<leader>cf` | Find file name under cursor |
+| `<leader>ci` | Find files #including the file name under cursor |
+| `<leader>ca` | Find places where current symbol is assigned |
+| `<leader>cz` | Find current word in ctags database |
+
 
 ## Powered by:
 

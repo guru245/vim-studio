@@ -67,7 +67,7 @@ Plugin 'inkarkat/vim-ingo-library'
 Plugin 'inkarkat/vim-mark'
 Plugin 'ervandew/supertab'
 Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'guru245/gutentags_plus'
+Plugin 'skywind3000/gutentags_plus'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -117,9 +117,10 @@ autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " Set vim-gutentags and gutentags_plus
+let g:gutentags_modules = ['ctags', 'gtags_cscope']
 let g:gutentags_project_root = ['.root']
 let g:gutentags_cache_dir = expand('~/.cache/tags')
-let g:gutentags_modules = ['ctags', 'gtags_cscope']
+let g:gutentags_plus_switch = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
