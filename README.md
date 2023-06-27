@@ -1,7 +1,7 @@
 # VIM Studio
 
 Can we turn Vim into an IDE? Yes, we can. It works even better and faster than
-any traditional IDE. Let's see.
+any traditional IDE. Let's dive right in.
 
 ![overview](./.imgs/overview.png)
 
@@ -28,12 +28,12 @@ any traditional IDE. Let's see.
 
   ![auto completion](./.imgs/autocomp.gif)
 
-* Automatic index searches and browses source codes thanks to Gutentags.
-  Without Gutentags, whenever you modify codes, tags must be up-to-date
+* Automatic index searches and browses source code thanks to Gutentags.
+  Without Gutentags, whenever you modify code, tags must be up-to-date
   MANUALLY. Yuck!
 
 * [Clang-format](https://clang.llvm.org/docs/ClangFormat.html) integration
-  formats codes with the desired style.
+  formats code with the desired style.
 
 * Vim-airline shows you nice glyphs.
 
@@ -43,9 +43,9 @@ any traditional IDE. Let's see.
 
 ## Environment
 
-Vim studio has been tested on the following conditions:
+Vim studio has been tested on the following environments:
 
-* Ubuntu 18.04~, Fedora 24, and WSL2
+* Ubuntu 18.04 or above, Fedora 24, and WSL2
 * Vim 8.0+
 * [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/get-started)
 
@@ -57,7 +57,7 @@ Vim studio has been tested on the following conditions:
 
 2. Install exuberant-ctags and global.
 
-   * `apt install exuberant-ctags global` in Ubuntu
+   * `apt install exuberant-ctags global`
    * If you are used to building things from source,
      [universal-ctags](https://github.com/universal-ctags/ctags) is recommended
      instead of exuberant-ctags because exuberant-ctags is very old and is not
@@ -71,7 +71,7 @@ fonts for glyphs.
    * Set the font by default to your terminal. For your reference, see
    [Windows Terminal Powerline Setup | Microsoft Docs](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
 
-5. Setting Vim config
+5. Set up Vim config
 
    ```bash
    git clone --depth 1 --recurse-submodules https://github.com/guru245/vim-studio.git [vim-studio where you want]
@@ -100,19 +100,18 @@ check out [Vim help](http://vimdoc.sourceforge.net/htmldoc/help.html) or
 * F10: Empty
 * F11: Step into the function.
 * F12: Step out of the function.
-* Ctrl+h, Ctrl+l: Go to the tab on the left/right
-* Shift+h, Shift+l, Shift+k, Shift+j:  Move between split windows
-* ,w: Save and close the current file. *Well~ we call it buffer in Vim*
-* Ctrl+k: Format code style as per clang-format style options
-* \<leader>d: Toggle line number
-* \<leader>p: Toggle paste option. This is useful if you want to cut or copy
+* `ctrl+h`, `ctrl+l`: Go to the tab on the left/right
+* `shift+h`, `shift+l`, `shift+k`, `shift+j`:  Move between split windows
+* `,w`: Save and close the current file. *Well~ we call it buffer in Vim*
+* `ctrl+k`: Format code style as per clang-format style options
+* `<leader>d`: Toggle line number
+* `<leader>p`: Toggle paste option. This is useful if you want to cut or copy
   some text from one window and paste it in Vim. Don't forget to toggle paste
   again once you finish pasting.
-* \<leader>m: Mark the keyword under the cursor
+* `<leader>m`: Mark the keyword under the cursor
 
-To perform cscope searching, use `:GscopeFind {querytype} {name}`,
-
-Where `{querytype}` corresponds to the actual cscope line interface numbers as
+To perform cscope searching, use `:GscopeFind {querytype} {name}`. Where
+`{querytype}` corresponds to the actual cscope line interface numbers as
 well as default nvi commands:
 
 ```
