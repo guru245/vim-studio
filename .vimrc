@@ -306,7 +306,5 @@ map <leader>d :call ToggleNu()<CR>
 " Toggle paste option. This is useful if you want to cut or copy some text
 " from one window and paste it in Vim. Don't forget to toggle paste again once
 " you're done with pasting.
-fu! TogglePaste()
-    let &paste = 1 - &paste
-endf
-map <leader>p :call TogglePaste()<CR>
+map <leader>p :set invpaste paste?<CR>
+set pastetoggle=<leader>p
